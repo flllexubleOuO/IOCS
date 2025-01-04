@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using IOCS.IOCS;
+
+IOCFactory iOCFactory = new IOCFactory();
+
+Student s =  (Student)iOCFactory.GetObject("IOCS.IOCS.Student");
+
+s.Study();

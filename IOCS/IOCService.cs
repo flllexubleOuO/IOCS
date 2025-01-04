@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace IOCS.IOCS
 {
-    [IOCService]
-    class Teacher
+    /// <summary>
+    /// 
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class)]
+    public class IOCService : Attribute
     {
-        public void Classes() 
-        {
-            Console.WriteLine("The teacher is giving a lecture!");
-        }
+
     }
 }

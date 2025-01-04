@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace IOCS.IOCS
 {
-    internal class Student
+    [IOCService]
+    class Student
     {
+        public Teacher teacher { get; set; }
+        public School school { get; set; }  
+
+        public void Study() 
+        {
+            teacher.Classes();
+            Console.WriteLine("student start study!");
+        }
     }
 }

@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace IOCS.IOCS
 {
-    [IOCService]
-    class Teacher
+    public class School
     {
-        public void Classes() 
-        {
-            Console.WriteLine("The teacher is giving a lecture!");
-        }
+        
     }
 }
